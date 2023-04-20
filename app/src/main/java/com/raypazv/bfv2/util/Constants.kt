@@ -1,0 +1,17 @@
+package com.raypazv.bfv2.util
+
+object Constants {
+  const val REQUEST_CODE_LOCATION_PERMISSIONS = 100
+
+  const val ACTION_START_OR_RESUME_SERVICE = "START_SERVICE"
+  const val ACTION_PAUSE_SERVICE = "PAUSE_SERVICE"
+  const val ACTION_STOP_SERVICE = "STOP_SERVICE"
+  const val ACTION_SHOW_MAIN_FRAGMENT = "SHOW_MAIN_FRAGMENT"
+
+  const val LOCATION_UPDATE_INTERVAL = 1000L
+  const val FASTEST_LOCATION_UPDATE_INTERVAL = 500L
+
+  const val NOTIFICATION_CHANNEL_ID = "tracking_channel"
+  const val NOTIFICATION_CHANNEL_NAME = "Tracking"
+  const val NOTIFICATION_ID = 1
+}

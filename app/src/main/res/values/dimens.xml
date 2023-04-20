@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <dimen name="distance1">1dp</dimen>
+  <dimen name="distance2">2dp</dimen>
+  <dimen name="distance3">3dp</dimen>
+  <dimen name="distance4">4dp</dimen>
+  <dimen name="distance5">5dp</dimen>
+  <dimen name="distance6">6dp</dimen>
+  <dimen name="distance7">7dp</dimen>
+  <dimen name="distance8">8dp</dimen>
+  <dimen name="distance16">16dp</dimen>
+  <dimen name="distance24">24dp</dimen>
+  <dimen name="distance32">32dp</dimen>
+  <dimen name="distance48">48dp</dimen>
+  <dimen name="distance56">56dp</dimen>
+  <dimen name="distance64">64dp</dimen>
+  <dimen name="distance128">128dp</dimen>
+
+  <dimen name="bottomSheetPeekHeight">40dp</dimen>
+
+  <dimen name="textSmall">14sp</dimen>
+  <dimen name="textNormal">16sp</dimen>
+  <dimen name="textLarge">18sp</dimen>
+  <dimen name="text2xl">20sp</dimen>
+  <dimen name="text3xl">22sp</dimen>
+  <dimen name="textHeading">32sp</dimen>
+  <dimen name="scrollDistance">1600dp</dimen>
+
+</resources>

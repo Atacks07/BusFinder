@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  tools:context=".ui.settings.SettingsFragment">
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+          android:id="@+id/settingsTitleTextViws"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="@dimen/distance32"
+          android:layout_marginTop="@dimen/distance64"
+          android:layout_marginEnd="@dimen/distance32"
+          android:text="@string/settingsTitleText"
+          android:textSize="@dimen/textHeading"
+          android:textStyle="bold" />
+
+        <TextView
+          android:id="@+id/generalTextView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="@dimen/distance32"
+          android:layout_marginTop="@dimen/distance16"
+          android:layout_marginEnd="@dimen/distance32"
+          android:layout_marginBottom="@dimen/distance16"
+          android:text="@string/generalText"
+          android:textColor="@color/seed"
+          android:textSize="@dimen/text2xl"
+          android:textStyle="bold" />
+
+        <LinearLayout
+          android:id="@+id/keepOnSetting"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="@dimen/distance32"
+          android:layout_marginEnd="@dimen/distance32"
+          android:background="?attr/selectableItemBackground"
+          android:minHeight="@dimen/distance64"
+          android:orientation="horizontal"
+          android:paddingTop="@dimen/distance8"
+          android:paddingBottom="@dimen/distance8"
+          android:weightSum="5">
+
+          <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:orientation="vertical">
+
+            <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/keepDeviceOnText"
+              android:textSize="@dimen/textLarge" />
+
+            <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="@dimen/distance4"
+              android:text="@string/keepDeviceOnHintText"
+              android:textSize="@dimen/textSmall" />
+
+          </LinearLayout>
+
+          <com.google.android.material.materialswitch.MaterialSwitch
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        </LinearLayout>
+
+      </LinearLayout>
+
+      <LinearLayout
+        android:id="@+id/moveCameraSetting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/distance32"
+        android:layout_marginTop="@dimen/distance16"
+        android:layout_marginEnd="@dimen/distance32"
+        android:background="?attr/selectableItemBackground"
+        android:minHeight="@dimen/distance64"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <LinearLayout
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="4"
+          android:orientation="vertical">
+
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/moveCamera"
+            android:textSize="@dimen/textLarge" />
+
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/distance4"
+            android:text="@string/moveCameraHint"
+            android:textSize="@dimen/textSmall" />
+
+        </LinearLayout>
+
+        <com.google.android.material.materialswitch.MaterialSwitch
+          android:layout_width="0dp"
+          android:layout_height="0dp"
+          android:layout_gravity="center"
+          android:layout_weight="1"
+          tools:ignore="TouchTargetSizeCheck" />
+
+      </LinearLayout>
+
+
+      <LinearLayout
+        android:id="@+id/keepLoggedSetting"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/distance32"
+        android:layout_marginTop="@dimen/distance16"
+        android:layout_marginEnd="@dimen/distance32"
+        android:background="?attr/selectableItemBackground"
+        android:minHeight="@dimen/distance64"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <LinearLayout
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="4"
+          android:orientation="vertical">
+
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/keepLogged"
+            android:textSize="@dimen/textLarge" />
+
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/keepLoggedHint"
+            android:textSize="@dimen/textSmall" />
+
+        </LinearLayout>
+
+        <com.google.android.material.materialswitch.MaterialSwitch
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_weight="1"
+          android:checked="true" />
+
+      </LinearLayout>
+
+    </LinearLayout>
+
+  </ScrollView>
+
+</layout>

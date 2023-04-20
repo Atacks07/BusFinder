@@ -1,0 +1,66 @@
+<resources>
+  <string name="app_name">Ubus</string>
+
+  <!-- General -->
+  <string name="cancelText">Cancel</string>
+  <string name="acceptText">Accept</string>
+
+  <!-- Main Fragment -->
+  <string name="optionsFABCD">Options</string>
+  <string name="shareLocationFABCD">Share location</string>
+  <string name="noPathSelectedText">No path selected</string>
+  <string name="notificationText">Using location in real time</string>
+  <string name="notificationPauseText">Pause</string>
+  <string name="notificationResumeText">Resume</string>
+  <string name="permissionRationaleText">You need to enable location all the time to share your location</string>
+  <string name="logoutDialogTitleText">Log out</string>
+  <string name="logoutDialogMessageText">Are you sure you want to log out?</string>
+  <string name="shareLocationDialogTitleText">Share your location</string>
+  <string name="shareLocationDialogMessageText">Do you want to share your location? This will share your current location with everyone.</string>
+  <string name="selectPathDialogTitleText">Select a path</string>
+  <string name="selectPathDialogMessageText">You must select a path to share your location</string>
+  <string name="stopLocationSharingDialogTitleText">Stop sharing location</string>
+  <string name="stopLocationSharingDialogMessageText">Do you want to stop sharing your location?</string>
+  <string name="timePlaceholderText" translatable="false">10 min.</string>
+  <string name="expandMoreInfoButtonCD">Expand</string>
+  <string name="pathPlaceholderText" translatable="false">Testpath</string>
+
+  <!-- Login Fragment -->
+  <string name="loginTitleText">Log in</string>
+  <string name="emailHintText">Email</string>
+  <string name="emailErrorText">Input a valid email</string>
+  <string name="passwordHintText">Password</string>
+  <string name="passwordErrorText">Input a valid password</string>
+  <string name="wrongCredentialsText">Wrong credentials. Try again</string>
+
+  <!-- Options menu -->
+  <string name="loginMenuText">Log in</string>
+  <string name="logoutMenuText">Log out</string>
+  <string name="settingsMenuText">Settings</string>
+  <string name="aboutMenuText">About</string>
+  <!-- TODO: Remove or change this placeholder text -->
+
+  <!-- Settings Fragment -->
+
+  <string name="settingsTitleText">Settings</string>
+  <string name="generalText">General</string>
+  <string name="keepDeviceOnText">Keep screen on</string>
+  <string name="keepDeviceOnHintText">Keep the screen on while using the app</string>
+  <string name="moveCamera">Move camera</string>
+  <string name="moveCameraHint">Move camera to keep bus in the center of the screen</string>
+  <string name="keepLogged">Keep logged</string>
+  <string name="keepLoggedHint">Keep your session logged in</string>
+  <string name="themeTitle">Theme</string>
+  <string-array name="themeOptions">
+    <item>Light</item>
+    <item>Dark</item>
+    <item>System\'s default</item>
+  </string-array>
+  <string name="theme">Theme</string>
+  <string name="themeHint">The default theme for the app</string>
+  <string name="routeColor">Route color</string>
+  <string name="routeColorHint">Color of the selected route</string>
+
+
+  <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

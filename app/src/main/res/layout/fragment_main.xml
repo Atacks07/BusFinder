@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  tools:context=".ui.main.MainFragment">
+
+  <androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:id="@+id/mainFragmentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.gms.maps.MapView
+      android:id="@+id/mapView"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+      android:id="@+id/optionsFAB"
+      style="@style/Widget.Material3.FloatingActionButton.Surface"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="end|top"
+      android:layout_margin="@dimen/distance16"
+      android:contentDescription="@string/optionsFABCD"
+      android:src="@drawable/ic_options"
+      app:fabSize="mini" />
+
+    <com.google.android.material.card.MaterialCardView
+      android:id="@+id/moreInfoCardView"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:visibility="gone"
+      android:layout_marginStart="@dimen/distance16"
+      android:layout_marginTop="@dimen/distance64"
+      android:layout_marginEnd="@dimen/distance16"
+      app:cardCornerRadius="@dimen/distance16"
+      app:cardElevation="@dimen/distance2"
+      app:strokeWidth="0dp">
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/distance8"
+        android:paddingBottom="@dimen/distance8">
+
+        <TextView
+          android:id="@+id/infoRouteNameTextView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="@dimen/distance16"
+          android:layout_marginTop="@dimen/distance8"
+          android:layout_marginEnd="@dimen/distance16"
+          android:ellipsize="marquee"
+          android:gravity="center"
+          app:layout_constraintBottom_toBottomOf="parent"
+          android:layout_marginBottom="@dimen/distance8"
+          android:singleLine="true"
+          android:textSize="@dimen/textLarge"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+          android:id="@+id/infoRouteTimeTextView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/distance8"
+          android:layout_marginEnd="@dimen/distance16"
+          android:gravity="center"
+          app:layout_constraintBottom_toBottomOf="parent"
+          android:layout_marginBottom="@dimen/distance8"
+          android:textColor="@color/seed"
+          android:textSize="@dimen/textLarge"
+          android:textStyle="bold"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          />
+
+        <!--<ImageButton
+          android:id="@+id/expandMoreInfoImageButton"
+          android:layout_width="@dimen/distance32"
+          android:layout_height="@dimen/distance32"
+          android:layout_marginTop="@dimen/distance4"
+          android:layout_marginEnd="@dimen/distance16"
+          android:background="@color/transparent"
+          android:contentDescription="@string/expandMoreInfoButtonCD"
+          android:src="@drawable/ic_caret_down"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />-->
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+      android:id="@+id/shareLocationFAB"
+      style="@style/Widget.Material3.FloatingActionButton.Primary"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="bottom|end"
+      android:layout_marginEnd="@dimen/distance16"
+      android:layout_marginBottom="@dimen/distance48"
+      android:contentDescription="@string/shareLocationFABCD"
+      android:src="@drawable/ic_location" />
+
+    <LinearLayout
+      android:id="@+id/pathsBottomSheet"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:elevation="@dimen/distance16"
+      android:orientation="vertical"
+      android:padding="@dimen/distance16"
+      app:behavior_hideable="false"
+      app:behavior_peekHeight="@dimen/bottomSheetPeekHeight"
+      app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_sheet_rounded_corners">
+
+        <View
+          android:id="@+id/bottomSheetThumbView"
+          android:layout_width="@dimen/distance48"
+          android:layout_height="@dimen/distance4"
+          android:layout_gravity="center"
+          android:layout_margin="@dimen/distance8"
+          android:background="@drawable/bottom_sheet_thumb_background"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/pathsRecyclerView"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/distance128"
+          android:layout_margin="@dimen/distance16"
+          tools:listitem="@layout/path_item_layout"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/bottomSheetThumbView" />
+
+        <TextView
+          android:id="@+id/currentPathTextView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="@dimen/distance16"
+          android:text="@string/noPathSelectedText"
+          android:textSize="@dimen/textNormal"
+          android:textStyle="bold"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toStartOf="@id/setPathImageButton"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/pathsRecyclerView" />
+
+        <ImageButton
+          android:id="@+id/setPathImageButton"
+          android:layout_width="@dimen/distance48"
+          android:layout_height="@dimen/distance48"
+          android:layout_margin="@dimen/distance16"
+          android:background="@drawable/rounded_button"
+          android:clickable="true"
+          android:focusable="true"
+          android:src="@drawable/ic_location"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/pathsRecyclerView"
+          app:tint="@color/md_theme_light_onPrimary" />
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+  </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</layout>

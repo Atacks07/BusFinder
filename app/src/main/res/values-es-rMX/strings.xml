@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">Ubus</string>
+  <string name="cancelText">Cancelar</string>
+  <string name="acceptText">Aceptar</string>
+  <string name="optionsFABCD">Opciones</string>
+  <string name="shareLocationFABCD">Compartir ubicación</string>
+  <string name="noPathSelectedText">Ninguna ruta seleccionada</string>
+  <string name="notificationText">Utilizando ubicación en tiempo real</string>
+  <string name="notificationPauseText">Pasuar</string>
+  <string name="notificationResumeText">Continuar</string>
+  <string name="permissionRationaleText">Necesida conceder acceso a la ubicación todo el tiemop para compartir</string>
+  <string name="logoutDialogTitleText">Cerrar sesión</string>
+  <string name="logoutDialogMessageText">¿Está seguro que desea cerrar la sesión?</string>
+  <string name="shareLocationDialogTitleText">Compartir su ubicación</string>
+  <string name="shareLocationDialogMessageText">¿Quiere compartir su ubicación?</string>
+  <string name="selectPathDialogTitleText">Seleccione una ruta</string>
+  <string name="selectPathDialogMessageText">Debe seleccionar una ruta para compartir su ubicación</string>
+  <string name="stopLocationSharingDialogTitleText">Detener el comparto de ubicación</string>
+  <string name="stopLocationSharingDialogMessageText">¿Desea dejar de compartir su ubicación?</string>
+  <string name="expandMoreInfoButtonCD">Expandir</string>
+  <string name="loginTitleText">Iniciar sesión</string>
+  <string name="emailHintText">Correo electrónico</string>
+  <string name="emailErrorText">Escriba un correo válido</string>
+  <string name="passwordHintText">Contraseña</string>
+  <string name="passwordErrorText">Escriba una contraseña válida</string>
+  <string name="wrongCredentialsText">Credenciales incorrectas. Intente de nuevo</string>
+  <string name="loginMenuText">Iniciar sesión</string>
+  <string name="logoutMenuText">Cerrar sesión</string>
+  <string name="settingsMenuText">Configuraciones</string>
+  <string name="aboutMenuText">"Acerca de "</string>
+  <string name="hello_blank_fragment">Hola</string>
+  <string name="settingsTitleText">Preferencias</string>
+  <string name="generalText">General</string>
+  <string name="keepDeviceOnText">Mantener la pantalla encendida</string>
+  <string name="keepDeviceOnHintText">Mantener la pantalla encendida mientras se usa la aplicación</string>
+  <string name="moveCamera">Mover cámara</string>
+  <string name="moveCameraHint">Mover la cámara para mover al autobus en el centro</string>
+  <string name="keepLogged">Mantener iniciada la sesión</string>
+  <string name="keepLoggedHint">Mantiene iniciada la sesión aún después de cerrar la app</string>
+  <string name="themeTitle">Apariencia</string>
+  <string name="theme">Tema</string>
+  <string name="themeHint">El tema por defecto de la atuenticaión</string>
+  <string name="routeColor">Color de ruta</string>
+  <string name="routeColorHint">Color de la ruta seleccionada</string>
+</resources>
